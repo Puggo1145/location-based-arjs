@@ -9,12 +9,11 @@
 </head>
 
 <body>
-    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false'
         renderer='antialias: true; alpha: true'>
         <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-        <a-entity material='color: red' geometry='primitive: box'
-            gps-new-entity-place="latitude: 29.614368; longitude: 106.30478" scale="10 10 10"></a-entity>
     </a-scene>
+    <script src="./basic.js"></script>
 </body>
 
 </html>
